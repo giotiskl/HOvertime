@@ -8,7 +8,7 @@ import qualified Data.List.Split as Split
 
 main :: IO () 
 main = do
-  withFile "./holidays.yaml" ReadMode (\handle -> do
+  withFile "./hOvertime.yaml" ReadMode (\handle -> do
     -- Get contents of holidays.yaml
     contents <- hGetContents handle
     -- Get today's date as :: Date {dateYear, dateMonth, dateDay}
